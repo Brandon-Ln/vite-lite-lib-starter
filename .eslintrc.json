@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "func-style": ["warn", "declaration"],
+    "semi": ["warn", "never"],
+    "no-duplicate-case": "error",
+    "no-use-before-define": "error",
+    "quotes": ["warn", "single"],
+    "no-unmodified-loop-condition": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "max-nested-callbacks": [
+      "warn",
+      {
+        "max": 5
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"] // use typescript-eslint parser for .ts|tsx files.
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# 对仓库提交的 message 进行 lint 操作
+
+npx --no -- commitlint --edit "$1"
+
