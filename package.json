@@ -45,7 +45,7 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
-    "build": "tsc --noEmit && vite build && tsc --emitDeclarationOnly",
+    "build": "vitest && tsc --noEmit && vite build && tsc --emitDeclarationOnly",
     "release": "vitest && tsc --noEmit && vite build && tsc --emitDeclarationOnly && release-it",
     "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore"
   },
